@@ -15,6 +15,7 @@
             <h1>Cadastre-se</h1>
             <form action="cadastro_usuario.php" method="POST">
                 <input type="text" name="nome" placeholder="Digite o seu nome" required>
+                <input type="url" name="imagem" placeholder="Link da sua foto" required>
                 <input type="email" name ="email" placeholder="Digite o seu e-mail" required>
                 <input type="password" name="senha" placeholder="Digite a sua senha" required>
                 <input type="password" name="conf_senha" placeholder="Confirme a sua senha" required>

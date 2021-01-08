@@ -3,6 +3,7 @@
 
 $nome=$_POST['nome'];
 $email=$_POST['email'];
+$imagem=$_POST['imagem'];
 $senha=$_POST['senha'];
 $conf_senha=$_POST['conf_senha'];
 
@@ -12,7 +13,7 @@ if(strlen($nome)>3 && strlen($email) > 3 & strlen($senha)>3 && $senha === $conf_
     $senha_crypto = md5($senha);
     //Criação da conexão    
     $conn = mysqli_connect("localhost","root","","sistema");
-    $sql = "INSERT INTO usuarios (nome_usuario,email_usuario,senha_usuario) VALUES ('$nome','$email','$senha_crypto')";
+    $sql = "INSERT INTO usuarios (nome_usuario,imagem,email_usuario,senha_usuario) VALUES ('$nome','$imagem','$email','$senha_crypto')";
     $conn->query($sql);
     echo '
     <script>

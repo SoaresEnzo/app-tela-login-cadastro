@@ -64,3 +64,13 @@ main {
     width: 80%;
 }
 
+@media  (max-width:576px){
+    .painel-imagem{
+        display: none;
+    }
+
+    .painel-login {
+        width: 100%;
+    }
+    
+}
